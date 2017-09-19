@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-x = 'str'
-if x:
-	print('True')
+s = input('age: ')
+age = int(s)
+if age < 20:
+	print('< 20')
 else:
-	print('Flase')
+	print('> 20')
