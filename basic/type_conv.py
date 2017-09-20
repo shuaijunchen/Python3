@@ -12,3 +12,6 @@ print(float('12.3'))
 
 # float to str
 print(str(12.02))
+
+# all type to bool
+print(bool(1), bool('')) 
