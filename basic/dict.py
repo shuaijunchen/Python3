@@ -3,3 +3,6 @@
 
 d = {'Chen':10, 'xx':12, 'cc':11}
 print(d['Chen'])
+
+d['Chen'] = 90
+print(d['Chen'])
