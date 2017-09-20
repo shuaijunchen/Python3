@@ -9,3 +9,6 @@ print(int(12.6))
 
 # str to float
 print(float('12.3'))
+
+# float to str
+print(str(12.02))
