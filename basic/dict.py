@@ -8,3 +8,5 @@ d['Chen'] = 90
 print(d['Chen'])
 
 print(d.get('bans',-1))
+
+print(d.pop('Chen'), d)
