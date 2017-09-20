@@ -6,3 +6,5 @@ print(d['Chen'])
 
 d['Chen'] = 90
 print(d['Chen'])
+
+print(d.get('bans'))
