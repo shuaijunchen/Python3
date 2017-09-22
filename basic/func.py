@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# help(abs)
+def my_abs(x):
+	if x >= 0:
+		return x
+	else:
+		return -x
 
-print(abs(10), abs(-20), abs(10.21))
-
-print(max(1, 2, 0, -1))
-
-a = abs
-print(a(-10))
+print(my_abs(-10))
