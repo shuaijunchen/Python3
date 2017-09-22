@@ -9,3 +9,13 @@ def power(x, n = 2):
 	return s
 
 print(power(5), power(5, 3))
+
+def add_end(L=None):
+	if L is None:
+		L = []
+	L.append('END')
+	return L
+
+print(add_end([1,2,3]))
+
+print(add_end())
