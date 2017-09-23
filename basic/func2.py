@@ -34,6 +34,10 @@ print(calc(*nums))
 print(calc())
 
 def person(name, age, **kw):
+	if 'city' in kw:
+		pass
+	if 'job' in  kw:
+		pass
 	print('name:',name,'age:',age,'other:',kw)
 
 person('zhangsan', 20, city='Chengdu')
@@ -41,3 +45,7 @@ person('zhangsan', 20, city='Chengdu')
 extra = {'city':'Chengdu', 'job':'engineer'}
 # person('zhangsan', 20, city=extra['city'], job=extra['job'])
 person('zhangsan', 20, **extra)
+
+person('zhangsan', 20, city='Chengdu', add='gaoxing', zipCode=610000)
+
+
