@@ -30,3 +30,5 @@ print(calc(1,2,3))
 
 nums = [1,2,3]
 print(calc(*nums))
+
+print(calc())
