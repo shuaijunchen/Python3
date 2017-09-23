@@ -39,4 +39,5 @@ def person(name, age, **kw):
 person('zhangsan', 20, city='Chengdu')
 
 extra = {'city':'Chengdu', 'job':'engineer'}
-person('zhangsan', 20, city=extra['city'], job=extra['job'])
+# person('zhangsan', 20, city=extra['city'], job=extra['job'])
+person('zhangsan', 20, **extra)
