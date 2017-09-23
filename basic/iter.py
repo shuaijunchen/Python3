@@ -16,3 +16,7 @@ print(isinstance((x for x in range(10)), Iterator))
 print(isinstance([], Iterator))
 print(isinstance({}, Iterator))
 print(isinstance('abc', Iterator))
+
+# 将生成器对象(Iterator)转换为迭代器对象(Iterator)
+print(isinstance(iter([]), Iterator))
+print(isinstance(iter('abc'), Iterator))
