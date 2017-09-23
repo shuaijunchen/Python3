@@ -37,3 +37,6 @@ def person(name, age, **kw):
 	print('name:',name,'age:',age,'other:',kw)
 
 person('zhangsan', 20, city='Chengdu')
+
+extra = {'city':'Chengdu', 'job':'engineer'}
+person('zhangsan', 20, city=extra['city'], job=extra['job'])
