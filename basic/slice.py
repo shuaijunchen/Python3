@@ -2,4 +2,4 @@
 # -*- coding: utf-8 -*-
 
 L = ['HHNS', 'GGSD', 'BBSN', 'SANS', 'DDFEN']
-print(L[:])
+print(L[:3])
