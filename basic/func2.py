@@ -32,3 +32,8 @@ nums = [1,2,3]
 print(calc(*nums))
 
 print(calc())
+
+def person(name, age, **kw):
+	print('name:',name,'age:',age,'other:',kw)
+
+person('zhangsan', 20, city='Chengdu')
