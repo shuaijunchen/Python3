@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-L = ['HHNS', 'GGSD', 'BBSN', 'SANS', 'DDFEN']
-print(L[-2:])
+L = list(range(100))
+print(L[:10])
