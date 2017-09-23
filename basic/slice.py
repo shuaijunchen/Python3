@@ -6,3 +6,5 @@ print(L[::5])
 
 tu = (0,1,2,3,4,5)[:3]
 print(tu)
+
+print('abcdef'[:2])
