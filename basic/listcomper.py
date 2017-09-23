@@ -20,3 +20,6 @@ print([d for d in os.listdir('.')])
 
 d = {'x':'A', 'y':'B', 'z':'C'}
 print([k + '=' + v for k, v in d.items()])
+
+L = ['Hello', 'World', 18 ,'IBM', 'Apple']
+print([s.lower() for s in L if isinstance(s, str)])
