@@ -13,3 +13,6 @@ for ch in 'ABC':
 print(isinstance('abc', Iterable)) # str
 print(isinstance([1,2,3], Iterable)) # list
 print(isinstance(123, Iterable)) # int
+
+for i, value in enumerate(['A','B','C']):
+    print(i, value)
