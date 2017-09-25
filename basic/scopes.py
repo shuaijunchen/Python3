@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# _priv1是一个私有的方法，外部不能访问，把逻辑隐藏起来
 def _priv1(name):
     return 'hello, %s' % name
 
