@@ -28,3 +28,9 @@ def run_twice(animal):
 run_twice(Animal())
 run_twice(Dog())
 run_twice(Cat())
+
+class Timer(object):
+	def run(self):
+		print('start...')
+
+run_twice(Timer())
