@@ -15,8 +15,16 @@ class Cat(Animal):
 	def run(self):
 		print('Cat is running...')	
 
-dog = Dog()
-dog.run()
+# dog = Dog()
+# dog.run()
 
-cat = Cat()
-cat.run()
+# cat = Cat()
+# cat.run()
+
+def run_twice(animal):
+	animal.run()
+	animal.run()
+
+run_twice(Animal())
+run_twice(Dog())
+run_twice(Cat())
