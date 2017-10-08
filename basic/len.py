@@ -27,3 +27,5 @@ setattr(obj, 'y', 20)
 print(hasattr(obj, 'y'))
 print(getattr(obj, 'y'))
 print(obj.y)
+
+print(getattr(obj, 'z', 404))
