@@ -22,3 +22,8 @@ print(isinstance(h, Dog))
 print(isinstance(h, Animal))
 print(isinstance(d, Dog) and isinstance(d, Animal))
 print(isinstance(d, Husky))
+
+print(isinstance('abc', str))
+print(isinstance(123, int))
+print(isinstance(b'a', bytes))
+
