@@ -27,3 +27,5 @@ print(isinstance('abc', str))
 print(isinstance(123, int))
 print(isinstance(b'a', bytes))
 
+print(isinstance([1,2,3], (list, tuple)))
+print(isinstance((1,2,3), (list, tuple)))
