@@ -23,3 +23,11 @@ def set_score(self, score):
 Student.set_score = set_score
 s.set_score(100)
 print(s.score)
+
+class Person(object):
+	__slots__ = ('name', 'age')
+
+p = Person()
+p.name = 'zhangsan'
+p.age = 20
+# p.score = 99
