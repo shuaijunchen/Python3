@@ -29,3 +29,29 @@ class Student(object):
 s  = Student()
 s.score = 60
 print(s.score)
+
+class Scree(object):
+	@property
+	def width(self):
+		return self._width
+
+	@width.setter
+	def width(self, value):
+		self._width = value
+
+	@property
+	def height(self):
+		return self._height
+
+	@height.setter
+	def height(self, value):
+		self._height = value
+
+	@property
+	def resolution(self):
+		return self.width * self.height
+
+sc = Scree()
+sc.width = 1024
+sc.height = 768
+print(sc.resolution)
