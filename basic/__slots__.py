@@ -31,3 +31,9 @@ p = Person()
 p.name = 'zhangsan'
 p.age = 20
 # p.score = 99
+
+class GreduateStudent(Person):
+	pass
+
+g = GreduateStudent()
+g.score = 100
