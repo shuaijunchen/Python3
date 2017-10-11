@@ -10,6 +10,7 @@ class Student(object):
 			return 99
 		if attr == 'age':
 			return lambda: 25
+		raise AttributeError('\'Student\' object has no attribute \'%s\'' % attr)
 
 s = Student()
 print(s.name)
