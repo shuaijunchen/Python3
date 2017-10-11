@@ -5,5 +5,7 @@ class Student(object):
 		self.name = name
 	def __str__(self):
 		return 'Student object (name: %s)' % self.name
+	__repr__ = __str__
 
-print(Student('Charles'))
+s = Student('Charles')
+print(s)
