@@ -19,3 +19,12 @@ class Weekday(Enum):
 	Thu = 4
 	Fri = 5
 	Sta = 6
+
+day1 = Weekday.Mon
+print(day1)
+print(Weekday.Tue)
+print(Weekday['Tue'])
+print(Weekday.Tue.value)
+print(day1 == Weekday.Mon)
+print(Weekday(1))
+print(day1 == Weekday(1))
