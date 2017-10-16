@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 now = datetime.now()
 print(now)
 print(type(now))
@@ -22,3 +22,8 @@ print(now.strftime('%a, %b %d %H:%M')) # datetime转换为str
 # datetime加减
 print(now + timedelta(hours=10))
 print(now + timedelta(days=1, hours=2))
+
+# 本地时间转换为UTC时间
+tz_utc_0 = timezone(timedelta(hours=0)) # 创建时区UTC+0:00
+dt = now.replace(tzinfo=tz_utc_0) # 强制设置UTC+0:00
+print(dt)
