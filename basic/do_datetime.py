@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from datetime import datetime
+from datetime import datetime, timedelta
 now = datetime.now()
 print(now)
 print(type(now))
@@ -18,3 +18,7 @@ cday = datetime.strptime('2017-10-16 21:10:29', "%Y-%m-%d %H:%M:%S") # str转换
 print(cday)
 
 print(now.strftime('%a, %b %d %H:%M')) # datetime转换为str
+
+# datetime加减
+print(now + timedelta(hours=10))
+print(now + timedelta(days=1, hours=2))
