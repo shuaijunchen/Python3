@@ -16,3 +16,5 @@ print(datetime.utcfromtimestamp(t)) # UTC时间
 
 cday = datetime.strptime('2017-10-16 21:10:29', "%Y-%m-%d %H:%M:%S") # str转换为datetime
 print(cday)
+
+print(now.strftime('%a, %b %d %H:%M')) # datetime转换为str
