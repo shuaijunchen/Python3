@@ -9,3 +9,6 @@ print(type(now))
 # 用指定日期时间创建datetime
 dt = datetime(2017, 10, 16, 21, 1)
 print(dt.timestamp()) # 把datetime转换为timestamp
+
+t = 1508158860.0
+print(datetime.fromtimestamp(t))
