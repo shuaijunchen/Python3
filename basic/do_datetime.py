@@ -27,3 +27,10 @@ print(now + timedelta(days=1, hours=2))
 tz_utc_0 = timezone(timedelta(hours=0)) # 创建时区UTC+0:00
 dt = now.replace(tzinfo=tz_utc_0) # 强制设置UTC+0:00
 print(dt)
+
+# 时区转换
+utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
+print(utc_dt)
+# 北京时间
+bj_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
+print(bj_dt)
