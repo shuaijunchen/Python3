@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from collections import namedtuple, deque, defaultdict, OrderedDict
+from collections import namedtuple, deque, defaultdict, OrderedDict, Counter
 
 Point = namedtuple('Point', ['x', 'y'])
 p = Point(1, 2)
@@ -26,3 +26,16 @@ d = dict([('a', 1), ('b', 2), ('c', 3)])
 print(d)
 od = OrderedDict([('a', 2),('b', 2), ('c', 3)])
 print(od)
+
+od = OrderedDict()
+od['z'] = 1
+od['y'] = 2
+od['x'] = 3
+print(od.keys())
+print(list(od.keys()))
+
+c = Counter()
+for ch in 'programming':
+    c[ch] = c[ch]+1
+
+print(c)
