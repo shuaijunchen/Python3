@@ -18,4 +18,6 @@ print(list(ns))
 # for n in ns:
 #    print(n)
 
-
+# chain()
+for c in itertools.chain('ABC','XYZ'):
+    print(c)
