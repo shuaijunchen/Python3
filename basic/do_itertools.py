@@ -23,5 +23,5 @@ for c in itertools.chain('ABC','XYZ'):
     print(c)
 
 # groupby()
-for key, group in itertools.groupby('AABBBCCAA'):
+for key, group in itertools.groupby('AaaBBbcCAAa',lambda c:c.upper()):
     print(key, list(group))
