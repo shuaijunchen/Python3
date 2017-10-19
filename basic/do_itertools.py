@@ -21,3 +21,7 @@ print(list(ns))
 # chain()
 for c in itertools.chain('ABC','XYZ'):
     print(c)
+
+# groupby()
+for key, group in itertools.groupby('AABBBCCAA'):
+    print(key, list(group))
