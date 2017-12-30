@@ -13,3 +13,7 @@ print('{0:_^9}'.format('chen'))
 
 # 基于关键字输出'Chen wrote A byte of Python'
 print('{a} wrote {b}'.format(a='Chen', b='a byte of python3'))
+
+print('a', end=' ')
+print('b', end=' ')
+print('c')
