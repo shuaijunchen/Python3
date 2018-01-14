@@ -1,8 +1,6 @@
 from urllib import request
+from urllib import parse
 
-response = request.urlopen('http://python.org')
-#print(response.read().decode('utf-8'))
-print(type(response))
-print(response.status)
-print(response.getheaders())
-print(response.getheader('Server'))
+data = bytes(parse.urlencode({'word':'hello'}), encoding='utf-8')
+response = request.urlopen('https://httpbin.org/post', data=data)
+print(response.read().decode('utf-8'))
