@@ -1,4 +1,8 @@
-from urllib import request
+import socket
+from urllib import request, error
 
-response = request.urlopen('https://httpbin.org/get', timeout=5)
-print(response.read().decode('utf-8'))
+try:
+    response = request.urlopen('https://httpbin.org/get', timeout=0.1)
+except error.URLError as e:
+    if isinstance(e.reason, socket.timeout):
+        print('Time out')
